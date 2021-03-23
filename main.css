@@ -1,0 +1,583 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+title{
+    background-color: cyan;
+}
+html{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    overflow: scroll;
+}
+.container{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+a{
+    text-decoration: none;
+}
+.section-title{
+    font-size: 0.6cm;
+    margin-bottom: 10px;
+    margin-top: 250px;
+    font-weight: 300;
+    letter-spacing: .2px;
+    color: black;
+    text-transform: uppercase;
+    text-align:center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.cta{
+    display: inline-block;
+    color: crimson;
+    background-color: transparent;
+    border:2px solid crimson;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    transition: .3s ease background-color;
+
+}
+
+.cta:hover{
+color: white;
+background-color: crimson;
+}
+/*hero section */
+
+.hero{
+    background-image: url(/images/download4.jpg );
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+.hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+ .hero{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+h1{
+    display: block;
+    font-size: 30px;
+    position: relative;
+    color: transparent;
+    animation: textreveal .5s forwards;
+    animation-delay: 1.5s;
+}
+h1:nth-child(1) {
+    animation-delay: 1.5s;
+}
+h1:nth-child(2){
+    animation-delay: 2.5s;
+}
+h1:nth-child(3){
+    animation-delay: 3.5s;
+    
+}
+
+h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    background-color: crimson;
+    animation: textrevealbox 1s ease;
+    animation-delay: 1s;
+}
+h1 span:nth-child(1){
+    animation-delay: 1s;
+}
+h1 span:nth-child(2){
+    animation-delay: 2s;
+}
+h1 span:nth-child(3){
+    animation: textrevealname .5s easy forwards;
+    animation-delay: 3s; 
+}
+.cta{
+    display: inline-block;
+    color: crimson;
+    background-color: transparent;
+    border:2px solid crimson;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    transition: .3s ease background-color;
+
+}
+
+.cta:hover{
+color: white;
+background-color: crimson;
+}
+/*end of hero section */
+
+/*start of service section*/
+
+#services .service {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+#services .section-title{
+    font-size: 0.6cm;
+    margin-bottom: 10px;
+    margin-top: 250px;
+    font-weight: 300;
+    letter-spacing: .2px;
+    color: black;
+    text-transform: uppercase;
+    text-align:center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+ 
+
+#services .service-top p{
+    font-size: 0.4cm;
+    margin: 5px 15px;
+    padding: 10px 15px;
+    letter-spacing: .05px;
+    line-height: 19px;
+    font-weight: 40;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: black;
+}
+#services .service-bottom{
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+}
+#services .service-Item{
+    width: 80%;
+    left: 35px;
+    display: flex;
+    flex-basis: 80%;
+    align-items: flex-start;
+    padding: 20px;
+    background-image: url(/images/download2.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px 20px;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+#services .service-Item::after{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+}
+#services .service-Item h2{
+    font-size: 0.5cm;
+    color: white;
+    margin: 5px;
+    font-weight: 30;
+    text-transform: capitalize;
+    letter-spacing: .15px;
+}
+.service-Item p{
+    color: white;
+    line-height: 19px;
+    font-size: 0.4cm;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/*end of service section*/
+
+/*start of our project section*/
+
+.project{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    margin: 0 30px;
+    position: relative;
+    top: 180px;
+}
+
+.project-header h3{
+    font-size: 0.6cm;
+    margin-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: .2px;
+    color: black;
+    text-transform: uppercase;
+    text-align:center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.project-header  p{
+
+    font-size: 0.45cm;
+    margin: 5px 15px;
+    padding: 10px 15px;
+    letter-spacing: .05px;
+    line-height: 19px;
+    font-weight: 40;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: black;
+}
+.all-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5cm;
+}
+.project-item{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 80%;
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+    padding: 5px 5px;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 8px 8px 18px 0px;
+}
+.project-info h3 {
+    font-size: 0.6cm;
+    color: black;
+    margin: 5px;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: .14px;
+    text-align: left;
+}
+.project-info a{
+    font-size: 0.45cm;
+    color: blueviolet; 
+    margin: 2px;
+    margin-left: 5px;
+    font-weight: 30;
+    letter-spacing: .15px;
+    text-align: left;
+    line-height: 17px;
+}
+.project-info p{
+    font-size: 0.45cm;
+    margin: 5px;
+    font-weight: 30;
+    letter-spacing: .15px;
+    text-align: left;
+    line-height: 17px;
+}
+
+
+/*end of our project section*/
+/*start of about*/
+.about{
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
+    width: 200px;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+.about  .section-title h3{
+    margin-top: 350px;
+    font-size: 0.6cm;
+    margin-bottom: 5px;
+    font-weight: 40;
+    letter-spacing: .2px;
+    color: black;
+    text-transform: uppercase;
+    text-align:center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.col-right  p{
+
+    font-size: 0.45cm;
+    margin: 1px 15px;
+    padding: 1px 15px;
+    letter-spacing: .05px;
+    line-height: 19px;
+    font-weight: 40;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 1px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    width: 300px;
+}
+.col-left .about-img img{
+    width: 100px;
+    height: 100px;
+}
+/*end of about*/
+/*start of contact*/
+.contact{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        padding: 100px 0;
+        margin: 0 auto;
+        top: 1000px;
+}
+  .subject-title h4{
+    margin-top: 500px;
+    font-size: 0.6cm;
+    margin-bottom: 5px;
+    font-weight: 40;
+    letter-spacing: .2px;
+    color: black;
+    text-transform: uppercase;
+    text-align:center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.contact-item{
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 15px;
+    box-shadow: 3px 3px 18px 0px;
+    transition: .3 ease box-shadow;
+}
+
+.contact-item .icon img{
+    width: 40px;
+}
+.contact-info h5{
+    font-size: 0.6cm;
+    color: black;
+    margin: 5px;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: .14px;
+    text-align: center; 
+}
+.contact-item:hover{
+    box-shadow: 20px 20px 25px 20px black; 
+}
+
+/*end of contact*/
+/*start of footer*/
+#footer{
+ 
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    z-index: -1;
+}
+.footer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px auto;
+    top: 1000px; 
+    min-height: 200px;
+    background-color: blue; 
+} 
+
+ .footer .subject-title h6{
+    margin-top: 500px;
+    font-size: 0.5cm;
+    margin-bottom: 5px;
+    font-weight: 40;
+    letter-spacing: .2px;
+    color: black;
+    text-transform: uppercase;
+    text-align:center;
+    margin-left: 15px;
+    margin-right: 15px;    
+}
+.footer p{
+    font-size: 0.4cm;
+    color: black;
+    margin: 5px;
+    font-weight: 30;
+    text-transform: capitalize;
+    letter-spacing: .15px;
+}
+.social-items{
+    width: 60%;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin:0 1px;
+    list-style-type: none;
+}
+nav li{
+    margin:0 20px;
+    position: relative;
+    right: -70px;
+}
+nav ul li img{
+    width: 30px;
+    height: 30px;
+    
+}
+
+@keyframes textrevealbox{
+    
+    100%{
+        width: 0;
+        left: 100%;
+    }
+    50%{
+        width: 100%;
+        left: 0; 
+     }
+}
+ @keyframes textreveal{
+     100%{
+         color: white;
+     }
+ }
+ /*media query screen for tablet*/
+ @media only screen and (min-width:770px) {
+    .container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }  
+    .hero{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 50px;
+        justify-content: flex-start;
+    }  
+    h1{
+        font-size: 60px;
+    } 
+    #services .section-title{
+        font-size: 0.9cm;
+        margin-bottom: 10px;
+        margin-top: 150px;
+        letter-spacing: .4px;
+        color: black;
+    }
+    #services .service-top p{
+        font-size: 0.5cm;
+        margin: 5px ;
+        padding: 10px 15px;
+        width: 90%;
+        letter-spacing: .1px;
+        line-height: 30px;
+        font-weight: 40;
+        text-align: left;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        background-color: white;
+        color: black; 
+        position: relative; 
+        left: 40px;
+    }
+   #services .service-bottom .service-Item{
+        width: 70%;
+        position: relative;
+        flex-basis: 45%;
+        margin: 2.5%;
+        right: 10px;
+        margin-bottom: 10px;
+        flex-direction: row;
+    }
+    .project{
+        width: 100%;
+        height: 100vh;
+        padding: 100px 0;
+        margin: 0 30px;
+        position: relative;
+        top: 130px;
+    }
+    .project-header h3{
+            font-size: 0.9cm;
+            margin-bottom: 10px;
+            font-weight: 300;
+            letter-spacing: .2px;
+          
+        } 
+        .project-header p{
+            font-size: 0.5cm;
+            width: 90%;
+            letter-spacing: .1px;
+            line-height: 30px;
+            font-weight: 40;
+            position: relative; 
+            left: 5px;
+        } 
+        .project-info{
+            display: flex;
+            flex-direction: column;
+            margin: 5px 10px;
+            padding: 5px 5px;
+            align-items: flex-start;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 8px 8px 18px 0px;
+        }
+    
+
+ }
